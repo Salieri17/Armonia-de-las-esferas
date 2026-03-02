@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  basePath: '/Armonia-de-las-esferas',
+  output: 'export',
   images: {
     remotePatterns: [
       {
@@ -7,6 +9,7 @@ const nextConfig = {
         hostname: '**',
       },
     ],
+    unoptimized: true,
   },
 }
 
