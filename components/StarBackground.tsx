@@ -3,10 +3,9 @@
 import { useRef, useMemo } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { Points, PointMaterial } from '@react-three/drei'
-import * as random from 'maath/random/dist/maath-random.esm'
 
 function Stars(props: any) {
-  const ref = useRef<any>()
+  const ref = useRef<any>(null)
   
   const sphere = useMemo(() => {
     const positions = new Float32Array(5000 * 3)
