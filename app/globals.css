@@ -10,10 +10,19 @@
   --glow: rgba(160, 167, 216, 0.4);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--background);
   color: var(--foreground);
+  font-family: var(--font-body), sans-serif;
   font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+.font-display {
+  font-family: var(--font-display), serif;
 }
 
 .text-balance {
@@ -28,6 +37,20 @@ body {
 
 .glow-effect {
   box-shadow: 0 0 20px var(--glow), 0 0 40px var(--glow);
+}
+
+.cosmic-gradient {
+  background:
+    radial-gradient(circle at 15% 15%, rgba(160, 167, 216, 0.22), transparent 38%),
+    radial-gradient(circle at 85% 10%, rgba(86, 72, 142, 0.3), transparent 42%),
+    radial-gradient(circle at 50% 80%, rgba(70, 95, 176, 0.2), transparent 48%);
+}
+
+.nebula-overlay {
+  background:
+    radial-gradient(circle at 20% 40%, rgba(160, 167, 216, 0.18), transparent 35%),
+    radial-gradient(circle at 70% 60%, rgba(104, 84, 165, 0.18), transparent 40%),
+    radial-gradient(circle at 50% 80%, rgba(45, 64, 124, 0.2), transparent 45%);
 }
 
 /* Smooth transitions for theme changes */

@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -23,8 +24,15 @@ export default function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <span className="text-2xl">✦</span>
+          <Link href="/" className="flex items-center space-x-3">
+            <Image
+              src="/logo-equipo.png"
+              alt="Logo de Armonía de las Esferas"
+              width={44}
+              height={44}
+              className="h-11 w-11 rounded-full border border-white/20 object-cover"
+              priority
+            />
             <span className="text-xl font-bold bg-gradient-to-r from-accent to-white bg-clip-text text-transparent">
               Armonía de las Esferas
             </span>
